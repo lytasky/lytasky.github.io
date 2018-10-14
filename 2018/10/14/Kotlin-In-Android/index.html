@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Android,Kotlin," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Kotlin In AndroidKotlin是什么 一种基于 JVM 的静态类型编程语言,旨在提供一种更好的 Java 开发方式，同时支持Android、后端、IOS、Web开发.     为什么要使用 Kotlin  Kotlin 上手比较容易，基本过一遍官方文档就可以上手开发 Kotlin 能明显提高Android开发者的开发效率； 作为 Android 官方语言，Goodle对于Kotli">
+<meta name="keywords" content="Android,Kotlin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kotlin In Android">
+<meta property="og:url" content="http://yoursite.com/2018/10/14/Kotlin-In-Android/index.html">
+<meta property="og:site_name" content="DongYe&#39;s Blog">
+<meta property="og:description" content="Kotlin In AndroidKotlin是什么 一种基于 JVM 的静态类型编程语言,旨在提供一种更好的 Java 开发方式，同时支持Android、后端、IOS、Web开发.     为什么要使用 Kotlin  Kotlin 上手比较容易，基本过一遍官方文档就可以上手开发 Kotlin 能明显提高Android开发者的开发效率； 作为 Android 官方语言，Goodle对于Kotli">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534058897780iv3TR28bzAnn4I9wiU3.png">
+<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534056843483r7zmdkKpOvA7xAxlHla.png">
+<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534060317791rTb3GBk1H2VlmV7bsuM.png">
+<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534061174055ByRxUa6PDdFElqZednS.png">
+<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/15340762693853D88pUEqo37PmakQmRZ.jpg">
+<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534064858365BqxxESX7cX1YLXqLtgJ.png">
+<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534075831437gcEUgIE9tCrSQQIr8sE.jpg">
+<meta property="og:updated_time" content="2018-10-14T03:29:48.181Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kotlin In Android">
+<meta name="twitter:description" content="Kotlin In AndroidKotlin是什么 一种基于 JVM 的静态类型编程语言,旨在提供一种更好的 Java 开发方式，同时支持Android、后端、IOS、Web开发.     为什么要使用 Kotlin  Kotlin 上手比较容易，基本过一遍官方文档就可以上手开发 Kotlin 能明显提高Android开发者的开发效率； 作为 Android 官方语言，Goodle对于Kotli">
+<meta name="twitter:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534058897780iv3TR28bzAnn4I9wiU3.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/10/14/Kotlin-In-Android/"/>
+
+
+
+
+
+  <title>Kotlin In Android | DongYe's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">DongYe's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/14/Kotlin-In-Android/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dong Ye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DongYe's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Kotlin In Android</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-14T11:20:51+08:00">
+                2018-10-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/10/14/Kotlin-In-Android/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/10/14/Kotlin-In-Android/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="Kotlin-In-Android"><a href="#Kotlin-In-Android" class="headerlink" title="Kotlin In Android"></a>Kotlin In Android</h3><h4 id="Kotlin是什么"><a href="#Kotlin是什么" class="headerlink" title="Kotlin是什么"></a>Kotlin是什么</h4><blockquote>
+<p>一种基于 JVM 的静态类型编程语言,旨在提供一种更好的 Java 开发方式，同时支持Android、后端、IOS、Web开发.</p>
+</blockquote>
+<blockquote>
+<p><img src="https://pt-starimg.didistatic.com/static/starimg/img/1534058897780iv3TR28bzAnn4I9wiU3.png"></p>
+</blockquote>
+<h4 id="为什么要使用-Kotlin"><a href="#为什么要使用-Kotlin" class="headerlink" title="为什么要使用 Kotlin"></a>为什么要使用 Kotlin</h4><blockquote>
+<ul>
+<li>Kotlin 上手比较容易，基本过一遍官方文档就可以上手开发</li>
+<li>Kotlin 能明显提高Android开发者的开发效率；</li>
+<li>作为 Android 官方语言，Goodle对于Kotlin提供了更好的支持，并且Google P 以及 Gradle 新版本的源码都将加入 Kotlin 的元素。</li>
+</ul>
+</blockquote>
+<h4 id="Kotlin-vs-Java"><a href="#Kotlin-vs-Java" class="headerlink" title="Kotlin vs Java"></a>Kotlin vs Java</h4><ul>
+<li>编译过程 对比</li>
+</ul>
+<blockquote>
+<p>Java 是一种基于 JVM 的语言，Java 语言通过 词法分析 - 语法分析 - 语义分析 等一系列步骤生成JVM可识别的Java字节码，最终由JVM解释执行</p>
+</blockquote>
+<blockquote>
+<p>Kotlin 也是一种基于 JVM 的语言，它的出现是为了提供一种更好更优雅的 Java 开发方式，通过简单分析 Kotlinc 的编译脚本，发现在编译生成中间代码的过程中两者基本一致，而区别是存在于生成目标代码也就是 Java字节码的过程中，Kotlin 在这个环节做了很多类似于封装的事情，比如 Getter/Setter 代码的生成Companion转变成静态类以及其它一些Kotlin特性解析的过程,可以说大部分的Kotlin让Java开发起来更加优雅的特性都是在这个环节转换完成的。</p>
+</blockquote>
+<blockquote>
+<p>两者的编译区别如下图：<br><img src="https://pt-starimg.didistatic.com/static/starimg/img/1534056843483r7zmdkKpOvA7xAxlHla.png"></p>
+</blockquote>
+<ul>
+<li>目标代码 对比</li>
+</ul>
+<blockquote>
+<p>Android Studio 有个 jclasslib 的插件可以很方便的查看 Java 字节码，而Android Studio已经原生提供了 Tools - Show Kotlin byteCode 工具来查看 Kotlin 代码生成的字节码。下面通过同样的一段简单的代码来对比 Kotlin 和 Java 字节码生成的异同：</p>
+</blockquote>
+<blockquote>
+<p><img src="https://pt-starimg.didistatic.com/static/starimg/img/1534060317791rTb3GBk1H2VlmV7bsuM.png"></p>
+</blockquote>
+<blockquote>
+<p>上图中是 Java 写的一个简单的 Android 界面类，可以通过 jclasslib 看到只有1个Field(postAdapter)和2个 method(init和oncreate)，没有其它多余的内容</p>
+</blockquote>
+<blockquote>
+<p>然后接着用Kotlin编写同样的代码发现除了 init 和 onCreate 方法以外还生成了 getPostsAdapter/setPostsAdapter/_$<em>findCachedViewById/</em>$_clearFindViewByIdCache 这5个方法，部分截图如下：</p>
+</blockquote>
+<blockquote>
+<p><img src="https://pt-starimg.didistatic.com/static/starimg/img/1534061174055ByRxUa6PDdFElqZednS.png"></p>
+</blockquote>
+<ul>
+<li>Tips</li>
+</ul>
+<blockquote>
+<p>Android Studio 不仅提供了 convert Java file to Kotlin file,也提供如上图绿色的 DeCompile 按钮 能把 kotlin 生成的字节码 反编译为 Java 代码，这个功能非常实用：通过这个功能你能看到 Kotlin 语法的所有的 Java 实现，这对更好的理解 Kotlin 的语法特性以及设计思想大有裨益。</p>
+</blockquote>
+<h4 id="Kotlin-实践"><a href="#Kotlin-实践" class="headerlink" title="Kotlin 实践"></a>Kotlin 实践</h4><blockquote>
+<p>通过这段时间的开发学习，对Kotlin对于开发效率的提升感受十分明显。现将简单介绍下Kotlin 在Android开发中常用的特性以及使用Kotlin期间碰到的问题。</p>
+</blockquote>
+<ul>
+<li><p>优雅的特性</p>
+<ul>
+<li>告别NPE以及自动识别类型</li>
+</ul>
+<blockquote>
+<ul>
+<li><p>在 Kotlin 中定义的变量默认都非空（如果想定义可空对象，需要在对象类型后面加上 ？），这样 Kotlin 就会在编译阶段检查所有的可能出现的空指针的风险。如下：</p>
+<pre><code>var postsAdapter: PostAdapter? 
+</code></pre></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>Kotlin 声明赋值在同一条语句的时候可以自动推断类型，无需显示声明。用val 定义final，用var 定义普通变量。如下：</li>
+</ul>
+</blockquote>
+<blockquote>
+<pre><code>   var count: Int = 0    // Int 可以省略
+var str: String = &quot;hello&quot;   //String 可以省略
+   val flag = true  //final 变量
+</code></pre></blockquote>
+</li>
+</ul>
+<ul>
+<li><p>数据类、对象类、自动生成getter/setter</p>
+<blockquote>
+<ul>
+<li>Java bean对象可以直接使用 data class来完成。如下：</li>
+</ul>
+</blockquote>
+<blockquote>
+<pre><code>data class Post(
+val id: Int,
+val userId: Int,
+val title: String,
+val body: String)
+</code></pre></blockquote>
+<blockquote>
+<ul>
+<li>Java 常用的单例模式或者static 类/方法都可以 object class来完成。如下：</li>
+</ul>
+</blockquote>
+<blockquote>
+<pre><code>object BeanClass {
+      fun test1() {
+      }
+      @JvmStatic
+      fun test2() {
+      }
+  }
+</code></pre></blockquote>
+<blockquote>
+<ul>
+<li>自动生成Getter/Setter </li>
+</ul>
+</blockquote>
+</li>
+<li><p>不再编写冗余的 findViewbyId，Lambda特性的代码简化，以及with、apply等关键字的使用,如下图所示：</p>
+<blockquote>
+<p><img src="https://pt-starimg.didistatic.com/static/starimg/img/15340762693853D88pUEqo37PmakQmRZ.jpg"></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>view的使用 不需要先findViewById，直接使用viewId就可以直接操作,如上图红框的部分</li>
+<li>使用了大量的Lambda特性来简写代码，如上图setOnClickListener</li>
+<li>with 和 apply 都可以将同一个对象的属性操作封装在{}来完成</li>
+</ul>
+</blockquote>
+</li>
+<li><p>扩展函数。</p>
+<blockquote>
+<ul>
+<li>可以在类中直接增加扩展函数，然后可以在项目的其它地方都可以使用，如下图所示:</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><img src="https://pt-starimg.didistatic.com/static/starimg/img/1534064858365BqxxESX7cX1YLXqLtgJ.png"></p>
+</blockquote>
+</li>
+<li><p>协程（实验性的功能） </p>
+<blockquote>
+<ul>
+<li>完全通过编译实现的用同步的代码方式开发异步功能.如下图所示:</li>
+</ul>
+</blockquote>
+<p>  <img src="https://pt-starimg.didistatic.com/static/starimg/img/1534075831437gcEUgIE9tCrSQQIr8sE.jpg">  </p>
+</li>
+</ul>
+<ul>
+<li><p>需要注意的问题</p>
+<ul>
+<li>Kotlin 不再有 Checked Exceptions。</li>
+</ul>
+<blockquote>
+<p>虽然Java的Checked Exceptions 写起来很繁琐，但是有助于提高代码的健壮性，Kotlin抛弃了Checked Exceptions，这就对于开发者处理异常有了更高的要求。</p>
+</blockquote>
+<ul>
+<li>和开源框架的兼容性问题</li>
+</ul>
+<blockquote>
+<ul>
+<li>小桔养车App中使用到了Arouter，在使用annotationProcessor的情况下 Kotlin代码在编译的时候不能生成注解文件，不过kapt(Annotation Processing for Kotlin) 很好的解决了这个问题，Arouter也做了适配。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>小桔养车App中使用到了fastJson,使得用Kotlin data class写的Bean类转换过程中会报错，看fastjson的issues介绍fastjson最新的版本做了兼容，不过经过测试还是会有问题，所以App里面的数据类暂时还都是用Java写的。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>不过随着使用Kotlin开发Android的人越来越多，适配问题应该都会逐渐解决。</li>
+</ul>
+</blockquote>
+<ul>
+<li>性能以及代码质量</li>
+</ul>
+<blockquote>
+<ul>
+<li>由于运行时和Java都是基于JVM的字节码解释执行，所以运行时性能不会有什么影响。编译时理论上由于会生成很多封装代码会导致编译变慢，但是在开发过程中感受不深，不过看其它开发者做了一些专门测试的经验文章说在增量编译的时候和Java基本没什么差别，在某些task上甚至会比Java更快。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>代码质量可以使用Klint、detekt等工具去做些检查，也有助于更好的理解Kotlin。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><blockquote>
+<p>经过一个多月的Kotlin开发,体验到了Kotlin的优雅也碰到了Kotlin的坑，希望Kotlin的发展越来越好，也期待更多的伙伴加入到Kotlin中开发中来。</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="Dong Ye 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="Dong Ye 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Android/" rel="tag"># Android</a>
+          
+            <a href="/tags/Kotlin/" rel="tag"># Kotlin</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Dong Ye</p>
+              <p class="site-description motion-element" itemprop="description">逻辑的尽头,不是理性与秩序的理想国</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kotlin-In-Android"><span class="nav-number">1.</span> <span class="nav-text">Kotlin In Android</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Kotlin是什么"><span class="nav-number">1.1.</span> <span class="nav-text">Kotlin是什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么要使用-Kotlin"><span class="nav-number">1.2.</span> <span class="nav-text">为什么要使用 Kotlin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Kotlin-vs-Java"><span class="nav-number">1.3.</span> <span class="nav-text">Kotlin vs Java</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Kotlin-实践"><span class="nav-number">1.4.</span> <span class="nav-text">Kotlin 实践</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">1.5.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dong Ye</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2018/10/14/Kotlin-In-Android/';
+          this.page.identifier = '2018/10/14/Kotlin-In-Android/';
+          this.page.title = 'Kotlin In Android';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'oKb8YMCuM6BuG8YhSCqKMUN0-gzGzoHsz',
+        appKey: 'isAUqNhTUBj6Y8jdegY0XoRl',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
