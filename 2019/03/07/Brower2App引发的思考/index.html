@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Android,Kotlin," />
+  <meta name="keywords" content="Android," />
 
 
 
@@ -79,26 +79,20 @@
 
 
 
-<meta name="description" content="Kotlin In AndroidKotlin是什么 一种基于 JVM 的静态类型编程语言,旨在提供一种更好的 Java 开发方式，同时支持Android、后端、IOS、Web开发.     为什么要使用 Kotlin  Kotlin 上手比较容易，基本过一遍官方文档就可以上手开发 Kotlin 能明显提高Android开发者的开发效率； 作为 Android 官方语言，Goodle对于Kotli">
-<meta name="keywords" content="Android,Kotlin">
+<meta name="description" content="一次 Brower2App 需求带来的思考事情要从接到一个从短信跳转到App的需求说起，需求具体来说是点击短信通过自定义scheme协议跳转到App。想想这算一个很常见的引流需求，就排了半天的期开始和IOS的同学一起弄，测试的时候发现IOS可以很自然的通过 A://B?url=http:// 这样的url跳转到App，但是Android的短信应用在点击文本的时候会自动正则匹配到http开始的部分然">
+<meta name="keywords" content="Android">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Kotlin In Android">
-<meta property="og:url" content="http://yoursite.com/2018/10/14/Kotlin-In-Android/index.html">
+<meta property="og:title" content="一次Brower2App需求带来的思考">
+<meta property="og:url" content="http://yoursite.com/2019/03/07/Brower2App引发的思考/index.html">
 <meta property="og:site_name" content="DongYe&#39;s Blog">
-<meta property="og:description" content="Kotlin In AndroidKotlin是什么 一种基于 JVM 的静态类型编程语言,旨在提供一种更好的 Java 开发方式，同时支持Android、后端、IOS、Web开发.     为什么要使用 Kotlin  Kotlin 上手比较容易，基本过一遍官方文档就可以上手开发 Kotlin 能明显提高Android开发者的开发效率； 作为 Android 官方语言，Goodle对于Kotli">
+<meta property="og:description" content="一次 Brower2App 需求带来的思考事情要从接到一个从短信跳转到App的需求说起，需求具体来说是点击短信通过自定义scheme协议跳转到App。想想这算一个很常见的引流需求，就排了半天的期开始和IOS的同学一起弄，测试的时候发现IOS可以很自然的通过 A://B?url=http:// 这样的url跳转到App，但是Android的短信应用在点击文本的时候会自动正则匹配到http开始的部分然">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534058897780iv3TR28bzAnn4I9wiU3.png">
-<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534056843483r7zmdkKpOvA7xAxlHla.png">
-<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534060317791rTb3GBk1H2VlmV7bsuM.png">
-<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534061174055ByRxUa6PDdFElqZednS.png">
-<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/15340762693853D88pUEqo37PmakQmRZ.jpg">
-<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534064858365BqxxESX7cX1YLXqLtgJ.png">
-<meta property="og:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534075831437gcEUgIE9tCrSQQIr8sE.jpg">
-<meta property="og:updated_time" content="2018-10-14T03:29:48.181Z">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/3/7/16955e8dd759e582?w=258&h=258&f=jpeg&s=15182">
+<meta property="og:updated_time" content="2019-03-07T02:46:26.888Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kotlin In Android">
-<meta name="twitter:description" content="Kotlin In AndroidKotlin是什么 一种基于 JVM 的静态类型编程语言,旨在提供一种更好的 Java 开发方式，同时支持Android、后端、IOS、Web开发.     为什么要使用 Kotlin  Kotlin 上手比较容易，基本过一遍官方文档就可以上手开发 Kotlin 能明显提高Android开发者的开发效率； 作为 Android 官方语言，Goodle对于Kotli">
-<meta name="twitter:image" content="https://pt-starimg.didistatic.com/static/starimg/img/1534058897780iv3TR28bzAnn4I9wiU3.png">
+<meta name="twitter:title" content="一次Brower2App需求带来的思考">
+<meta name="twitter:description" content="一次 Brower2App 需求带来的思考事情要从接到一个从短信跳转到App的需求说起，需求具体来说是点击短信通过自定义scheme协议跳转到App。想想这算一个很常见的引流需求，就排了半天的期开始和IOS的同学一起弄，测试的时候发现IOS可以很自然的通过 A://B?url=http:// 这样的url跳转到App，但是Android的短信应用在点击文本的时候会自动正则匹配到http开始的部分然">
+<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2019/3/7/16955e8dd759e582?w=258&h=258&f=jpeg&s=15182">
 
 
 
@@ -128,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/14/Kotlin-In-Android/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/03/07/Brower2App引发的思考/"/>
 
 
 
 
 
-  <title>Kotlin In Android | DongYe's Blog</title>
+  <title>一次Brower2App需求带来的思考 | DongYe's Blog</title>
   
 
 
@@ -261,7 +255,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/14/Kotlin-In-Android/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/07/Brower2App引发的思考/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dong Ye">
@@ -278,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Kotlin In Android</h1>
+          <h1 class="post-title" itemprop="name headline">一次Brower2App需求带来的思考</h1>
         
 
         <div class="post-meta">
@@ -290,8 +284,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-14T11:20:51+08:00">
-                2018-10-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-07T10:26:56+08:00">
+                2019-03-07
               </time>
             
 
@@ -331,9 +325,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/10/14/Kotlin-In-Android/#comments" itemprop="discussionUrl">
+                <a href="/2019/03/07/Brower2App引发的思考/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/10/14/Kotlin-In-Android/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2019/03/07/Brower2App引发的思考/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -361,191 +355,20 @@
       
 
       
-        <h3 id="Kotlin-In-Android"><a href="#Kotlin-In-Android" class="headerlink" title="Kotlin In Android"></a>Kotlin In Android</h3><h4 id="Kotlin是什么"><a href="#Kotlin是什么" class="headerlink" title="Kotlin是什么"></a>Kotlin是什么</h4><blockquote>
-<p>一种基于 JVM 的静态类型编程语言,旨在提供一种更好的 Java 开发方式，同时支持Android、后端、IOS、Web开发.</p>
-</blockquote>
-<blockquote>
-<p><img src="https://pt-starimg.didistatic.com/static/starimg/img/1534058897780iv3TR28bzAnn4I9wiU3.png"></p>
-</blockquote>
-<h4 id="为什么要使用-Kotlin"><a href="#为什么要使用-Kotlin" class="headerlink" title="为什么要使用 Kotlin"></a>为什么要使用 Kotlin</h4><blockquote>
+        <h4 id="一次-Brower2App-需求带来的思考"><a href="#一次-Brower2App-需求带来的思考" class="headerlink" title="一次 Brower2App 需求带来的思考"></a>一次 Brower2App 需求带来的思考</h4><p>事情要从接到一个从短信跳转到App的需求说起，需求具体来说是点击短信通过自定义scheme协议跳转到App。想想这算一个很常见的引流需求，就排了半天的期开始和IOS的同学一起弄，测试的时候发现IOS可以很自然的通过 A://B?url=http:// 这样的url跳转到App，但是Android的短信应用在点击文本的时候会自动正则匹配到http开始的部分然后用浏览器打开这个http的链接，试了几台手机都是这样，不能读取协议要从短信直接跳转到App基本不可能，所以和产品讨论了下，用另一种比较常见的方式：在浏览器打开的http页面中编写逻辑，先判断是否已经安装App，然后在拼接A://B?url=http:// 这样的链接跳转，Done。</p>
+<p>完成了这个需求，忽然开始思考为什么能通过浏览器跳转到App，浏览器跳转的方式主要有以下三种：</p>
 <ul>
-<li>Kotlin 上手比较容易，基本过一遍官方文档就可以上手开发</li>
-<li>Kotlin 能明显提高Android开发者的开发效率；</li>
-<li>作为 Android 官方语言，Goodle对于Kotlin提供了更好的支持，并且Google P 以及 Gradle 新版本的源码都将加入 Kotlin 的元素。</li>
+<li>iframe</li>
+<li>a标签、</li>
+<li>window.location.href</li>
 </ul>
-</blockquote>
-<h4 id="Kotlin-vs-Java"><a href="#Kotlin-vs-Java" class="headerlink" title="Kotlin vs Java"></a>Kotlin vs Java</h4><ul>
-<li>编译过程 对比</li>
-</ul>
-<blockquote>
-<p>Java 是一种基于 JVM 的语言，Java 语言通过 词法分析 - 语法分析 - 语义分析 等一系列步骤生成JVM可识别的Java字节码，最终由JVM解释执行</p>
-</blockquote>
-<blockquote>
-<p>Kotlin 也是一种基于 JVM 的语言，它的出现是为了提供一种更好更优雅的 Java 开发方式，通过简单分析 Kotlinc 的编译脚本，发现在编译生成中间代码的过程中两者基本一致，而区别是存在于生成目标代码也就是 Java字节码的过程中，Kotlin 在这个环节做了很多类似于封装的事情，比如 Getter/Setter 代码的生成Companion转变成静态类以及其它一些Kotlin特性解析的过程,可以说大部分的Kotlin让Java开发起来更加优雅的特性都是在这个环节转换完成的。</p>
-</blockquote>
-<blockquote>
-<p>两者的编译区别如下图：<br><img src="https://pt-starimg.didistatic.com/static/starimg/img/1534056843483r7zmdkKpOvA7xAxlHla.png"></p>
-</blockquote>
-<ul>
-<li>目标代码 对比</li>
-</ul>
-<blockquote>
-<p>Android Studio 有个 jclasslib 的插件可以很方便的查看 Java 字节码，而Android Studio已经原生提供了 Tools - Show Kotlin byteCode 工具来查看 Kotlin 代码生成的字节码。下面通过同样的一段简单的代码来对比 Kotlin 和 Java 字节码生成的异同：</p>
-</blockquote>
-<blockquote>
-<p><img src="https://pt-starimg.didistatic.com/static/starimg/img/1534060317791rTb3GBk1H2VlmV7bsuM.png"></p>
-</blockquote>
-<blockquote>
-<p>上图中是 Java 写的一个简单的 Android 界面类，可以通过 jclasslib 看到只有1个Field(postAdapter)和2个 method(init和oncreate)，没有其它多余的内容</p>
-</blockquote>
-<blockquote>
-<p>然后接着用Kotlin编写同样的代码发现除了 init 和 onCreate 方法以外还生成了 getPostsAdapter/setPostsAdapter/_$<em>findCachedViewById/</em>$_clearFindViewByIdCache 这5个方法，部分截图如下：</p>
-</blockquote>
-<blockquote>
-<p><img src="https://pt-starimg.didistatic.com/static/starimg/img/1534061174055ByRxUa6PDdFElqZednS.png"></p>
-</blockquote>
-<ul>
-<li>Tips</li>
-</ul>
-<blockquote>
-<p>Android Studio 不仅提供了 convert Java file to Kotlin file,也提供如上图绿色的 DeCompile 按钮 能把 kotlin 生成的字节码 反编译为 Java 代码，这个功能非常实用：通过这个功能你能看到 Kotlin 语法的所有的 Java 实现，这对更好的理解 Kotlin 的语法特性以及设计思想大有裨益。</p>
-</blockquote>
-<h4 id="Kotlin-实践"><a href="#Kotlin-实践" class="headerlink" title="Kotlin 实践"></a>Kotlin 实践</h4><blockquote>
-<p>通过这段时间的开发学习，对Kotlin对于开发效率的提升感受十分明显。现将简单介绍下Kotlin 在Android开发中常用的特性以及使用Kotlin期间碰到的问题。</p>
-</blockquote>
-<ul>
-<li><p>优雅的特性</p>
-<ul>
-<li>告别NPE以及自动识别类型</li>
-</ul>
-<blockquote>
-<ul>
-<li><p>在 Kotlin 中定义的变量默认都非空（如果想定义可空对象，需要在对象类型后面加上 ？），这样 Kotlin 就会在编译阶段检查所有的可能出现的空指针的风险。如下：</p>
-<pre><code>var postsAdapter: PostAdapter? 
-</code></pre></li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>Kotlin 声明赋值在同一条语句的时候可以自动推断类型，无需显示声明。用val 定义final，用var 定义普通变量。如下：</li>
-</ul>
-</blockquote>
-<blockquote>
-<pre><code>   var count: Int = 0    // Int 可以省略
-var str: String = &quot;hello&quot;   //String 可以省略
-   val flag = true  //final 变量
-</code></pre></blockquote>
-</li>
-</ul>
-<ul>
-<li><p>数据类、对象类、自动生成getter/setter</p>
-<blockquote>
-<ul>
-<li>Java bean对象可以直接使用 data class来完成。如下：</li>
-</ul>
-</blockquote>
-<blockquote>
-<pre><code>data class Post(
-val id: Int,
-val userId: Int,
-val title: String,
-val body: String)
-</code></pre></blockquote>
-<blockquote>
-<ul>
-<li>Java 常用的单例模式或者static 类/方法都可以 object class来完成。如下：</li>
-</ul>
-</blockquote>
-<blockquote>
-<pre><code>object BeanClass {
-      fun test1() {
-      }
-      @JvmStatic
-      fun test2() {
-      }
-  }
-</code></pre></blockquote>
-<blockquote>
-<ul>
-<li>自动生成Getter/Setter </li>
-</ul>
-</blockquote>
-</li>
-<li><p>不再编写冗余的 findViewbyId，Lambda特性的代码简化，以及with、apply等关键字的使用,如下图所示：</p>
-<blockquote>
-<p><img src="https://pt-starimg.didistatic.com/static/starimg/img/15340762693853D88pUEqo37PmakQmRZ.jpg"></p>
-</blockquote>
-<blockquote>
-<ul>
-<li>view的使用 不需要先findViewById，直接使用viewId就可以直接操作,如上图红框的部分</li>
-<li>使用了大量的Lambda特性来简写代码，如上图setOnClickListener</li>
-<li>with 和 apply 都可以将同一个对象的属性操作封装在{}来完成</li>
-</ul>
-</blockquote>
-</li>
-<li><p>扩展函数。</p>
-<blockquote>
-<ul>
-<li>可以在类中直接增加扩展函数，然后可以在项目的其它地方都可以使用，如下图所示:</li>
-</ul>
-</blockquote>
-<blockquote>
-<p><img src="https://pt-starimg.didistatic.com/static/starimg/img/1534064858365BqxxESX7cX1YLXqLtgJ.png"></p>
-</blockquote>
-</li>
-<li><p>协程（实验性的功能） </p>
-<blockquote>
-<ul>
-<li>完全通过编译实现的用同步的代码方式开发异步功能.如下图所示:</li>
-</ul>
-</blockquote>
-<p>  <img src="https://pt-starimg.didistatic.com/static/starimg/img/1534075831437gcEUgIE9tCrSQQIr8sE.jpg">  </p>
-</li>
-</ul>
-<ul>
-<li><p>需要注意的问题</p>
-<ul>
-<li>Kotlin 不再有 Checked Exceptions。</li>
-</ul>
-<blockquote>
-<p>虽然Java的Checked Exceptions 写起来很繁琐，但是有助于提高代码的健壮性，Kotlin抛弃了Checked Exceptions，这就对于开发者处理异常有了更高的要求。</p>
-</blockquote>
-<ul>
-<li>和开源框架的兼容性问题</li>
-</ul>
-<blockquote>
-<ul>
-<li>小桔养车App中使用到了Arouter，在使用annotationProcessor的情况下 Kotlin代码在编译的时候不能生成注解文件，不过kapt(Annotation Processing for Kotlin) 很好的解决了这个问题，Arouter也做了适配。</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>小桔养车App中使用到了fastJson,使得用Kotlin data class写的Bean类转换过程中会报错，看fastjson的issues介绍fastjson最新的版本做了兼容，不过经过测试还是会有问题，所以App里面的数据类暂时还都是用Java写的。</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>不过随着使用Kotlin开发Android的人越来越多，适配问题应该都会逐渐解决。</li>
-</ul>
-</blockquote>
-<ul>
-<li>性能以及代码质量</li>
-</ul>
-<blockquote>
-<ul>
-<li>由于运行时和Java都是基于JVM的字节码解释执行，所以运行时性能不会有什么影响。编译时理论上由于会生成很多封装代码会导致编译变慢，但是在开发过程中感受不深，不过看其它开发者做了一些专门测试的经验文章说在增量编译的时候和Java基本没什么差别，在某些task上甚至会比Java更快。</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>代码质量可以使用Klint、detekt等工具去做些检查，也有助于更好的理解Kotlin。</li>
-</ul>
-</blockquote>
-</li>
-</ul>
-<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><blockquote>
-<p>经过一个多月的Kotlin开发,体验到了Kotlin的优雅也碰到了Kotlin的坑，希望Kotlin的发展越来越好，也期待更多的伙伴加入到Kotlin中开发中来。</p>
-</blockquote>
+<p>想起之前了解过跨App跳转，是通过intent来传递协议好的scheme来跳转，具体原理是系统通过PMS管理系统的组件（包括Activity、Service等），然后intent跳转的时候会搜索PMS记录的具体相同scheme协议的组件，虽然浏览器也属于手机上的一个App，但是看到的浏览器并没有显示的去调用Intent 跳转，继续往下想，在手机上浏览器都是通过WebView打开一个页面，上面的3种方式最终也都是会执行到WebView.loadUrl这个方法上，而WebView在每次loadUrl的时候都会去调用WebViewClient的shouldOverrideUrlLoading(WebView view, WebResourceRequest request) 方法，浏览器只需要在shouldOverrideUrlLoading的回调中判断打开的url的协议，如果不是http以及https，直接通过intent转发给系统跳转就能实现通过浏览器跳转到其它App的功能，最后去反编译了一下Chrome App，果然( 省略了一些其它的思考，比如不同浏览器对于上述跳转方式的兼容性、Android/IOS不同行为的原因、以及Android自带的direct link 和 app link来实现跳转等等)。</p>
+<p>写到这里想聊一聊从中想到的，自己最近在和同事交流关于术和道的区别，术和道顾名思义是指方法和道理，也可以理解为事物所展现的形式和事物的一般本质规律，结合上面的需求，我们可以从google搜索能看到很多写的很详细的blog，并能在github上找到很多可以直接运行的库，通过这些可以很快速的解决我们的问题，上升到其它需求，大部分我们基本也都能在google上搜索到答案，但是这些都是别人总结出来的方法，也就是术，按照这种方式，随着工作时间的推进，我们能学习到很多很多的术，下次碰到相同的问题，我们也能比较有经验的了解怎么去解决这个问题，也有的很多同学都会想着通过看别人写的blog来学习，之前的我也是这样，花的时间不少，但是收效并不太理想，一方面时间久了术就会慢慢的遗忘，毕竟数量太大，另一方面碰到近似的问题还是得去搜索另一种术，事倍而工半。</p>
+<p>再举个例子，我们可能都知道ConcurrentHashMap和HashTable都是线程安全的容器，可能也知道ConcurrentHashMap的效率比HashTable高，你也可能知道前者由于只对单个的key进行lock所以比对整个数组进行lock的后者效率高，但是如果你知道看了一些牛人总结出来的术，你知道的可能就到这里了，如果你想理解而不是了解两者的本质区别，read the fuck source code 才是更适合你的方式。总是会羡慕无所不知、知其然且知其所以然的大神，对于自己2-3年缓慢的工作成长速度感到焦虑，是时候改变自己的思维方式了。</p>
+<p>我们不应该只是关注到事物的术，而需要在了解到术的同时，不断的思考去逼近事物的道，也就是其本质的一般规律。不断地思考去逐渐逼近问题的本质，也就是我们常说的深度思考，讲解深度思考好处以及如何养成的书很多，就不班门弄斧的推荐了，不过深度思考确实是一种非常稀缺的能力，需要经过长期的自我训练逐步养成，希望大家更快体会到深度思考的乐趣。</p>
+<p>碎碎叨叨的念了这些，夜深了，希望大家能一起更好更快的成长。</p>
+<p>（公众号会持续更新一些个人成长、技术成长相关的文章，可以关注一起学习）</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/3/7/16955e8dd759e582?w=258&amp;h=258&amp;f=jpeg&amp;s=15182" alt=""></p>
 
       
     </div>
@@ -594,8 +417,6 @@ val body: String)
           
             <a href="/tags/Android/" rel="tag"># Android</a>
           
-            <a href="/tags/Kotlin/" rel="tag"># Kotlin</a>
-          
         </div>
       
 
@@ -607,15 +428,15 @@ val body: String)
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/10/14/Kotlin-In-Android/" rel="next" title="Kotlin In Android">
+                <i class="fa fa-chevron-left"></i> Kotlin In Android
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/07/Brower2App引发的思考/" rel="prev" title="一次Brower2App需求带来的思考">
-                一次Brower2App需求带来的思考 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -757,7 +578,7 @@ val body: String)
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kotlin-In-Android"><span class="nav-number">1.</span> <span class="nav-text">Kotlin In Android</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Kotlin是什么"><span class="nav-number">1.1.</span> <span class="nav-text">Kotlin是什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么要使用-Kotlin"><span class="nav-number">1.2.</span> <span class="nav-text">为什么要使用 Kotlin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Kotlin-vs-Java"><span class="nav-number">1.3.</span> <span class="nav-text">Kotlin vs Java</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Kotlin-实践"><span class="nav-number">1.4.</span> <span class="nav-text">Kotlin 实践</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">1.5.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一次-Brower2App-需求带来的思考"><span class="nav-number">1.</span> <span class="nav-text">一次 Brower2App 需求带来的思考</span></a></li></ol></div>
             
 
           </div>
@@ -920,9 +741,9 @@ val body: String)
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2018/10/14/Kotlin-In-Android/';
-          this.page.identifier = '2018/10/14/Kotlin-In-Android/';
-          this.page.title = 'Kotlin In Android';
+          this.page.url = 'http://yoursite.com/2019/03/07/Brower2App引发的思考/';
+          this.page.identifier = '2019/03/07/Brower2App引发的思考/';
+          this.page.title = '一次Brower2App需求带来的思考';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
