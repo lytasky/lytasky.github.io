@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="一次 Brower2App 需求带来的思考事情要从接到一个从短信跳转到App的需求说起，需求具体来说是点击短信通过自定义scheme协议跳转到App。想想这算一个很常见的引流需求，就排了半天的期开始和IOS的同学一起弄，测试的时候发现IOS可以很自然的通过 A://B?url=http:// 这样的url跳转到App，但是Android的短信应用在点击文本的时候会自动正则匹配到http开始的部分然">
+<meta name="description" content="Brower2App需求引发的思考事情要从接到一个从短信跳转到App的需求说起，需求具体来说是点击短信通过自定义scheme协议跳转到App。想想这算一个很常见的引流需求，就排了半天的期开始和IOS的同学一起弄，测试的时候发现IOS可以很自然的通过 A://B?url=http:// 这样的url跳转到App，但是Android的短信应用在点击文本的时候会自动正则匹配到http开始的部分然后用浏览">
 <meta name="keywords" content="Android">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一次Brower2App需求带来的思考">
+<meta property="og:title" content="Brower2App需求引发的思考">
 <meta property="og:url" content="http://yoursite.com/2019/03/07/Brower2App引发的思考/index.html">
 <meta property="og:site_name" content="DongYe&#39;s Blog">
-<meta property="og:description" content="一次 Brower2App 需求带来的思考事情要从接到一个从短信跳转到App的需求说起，需求具体来说是点击短信通过自定义scheme协议跳转到App。想想这算一个很常见的引流需求，就排了半天的期开始和IOS的同学一起弄，测试的时候发现IOS可以很自然的通过 A://B?url=http:// 这样的url跳转到App，但是Android的短信应用在点击文本的时候会自动正则匹配到http开始的部分然">
+<meta property="og:description" content="Brower2App需求引发的思考事情要从接到一个从短信跳转到App的需求说起，需求具体来说是点击短信通过自定义scheme协议跳转到App。想想这算一个很常见的引流需求，就排了半天的期开始和IOS的同学一起弄，测试的时候发现IOS可以很自然的通过 A://B?url=http:// 这样的url跳转到App，但是Android的短信应用在点击文本的时候会自动正则匹配到http开始的部分然后用浏览">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/3/7/16955e8dd759e582?w=258&h=258&f=jpeg&s=15182">
-<meta property="og:updated_time" content="2019-03-07T02:46:26.888Z">
+<meta property="og:updated_time" content="2019-03-07T05:31:16.320Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一次Brower2App需求带来的思考">
-<meta name="twitter:description" content="一次 Brower2App 需求带来的思考事情要从接到一个从短信跳转到App的需求说起，需求具体来说是点击短信通过自定义scheme协议跳转到App。想想这算一个很常见的引流需求，就排了半天的期开始和IOS的同学一起弄，测试的时候发现IOS可以很自然的通过 A://B?url=http:// 这样的url跳转到App，但是Android的短信应用在点击文本的时候会自动正则匹配到http开始的部分然">
+<meta name="twitter:title" content="Brower2App需求引发的思考">
+<meta name="twitter:description" content="Brower2App需求引发的思考事情要从接到一个从短信跳转到App的需求说起，需求具体来说是点击短信通过自定义scheme协议跳转到App。想想这算一个很常见的引流需求，就排了半天的期开始和IOS的同学一起弄，测试的时候发现IOS可以很自然的通过 A://B?url=http:// 这样的url跳转到App，但是Android的短信应用在点击文本的时候会自动正则匹配到http开始的部分然后用浏览">
 <meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2019/3/7/16955e8dd759e582?w=258&h=258&f=jpeg&s=15182">
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>一次Brower2App需求带来的思考 | DongYe's Blog</title>
+  <title>Brower2App需求引发的思考 | DongYe's Blog</title>
   
 
 
@@ -272,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">一次Brower2App需求带来的思考</h1>
+          <h1 class="post-title" itemprop="name headline">Brower2App需求引发的思考</h1>
         
 
         <div class="post-meta">
@@ -355,7 +355,7 @@
       
 
       
-        <h4 id="一次-Brower2App-需求带来的思考"><a href="#一次-Brower2App-需求带来的思考" class="headerlink" title="一次 Brower2App 需求带来的思考"></a>一次 Brower2App 需求带来的思考</h4><p>事情要从接到一个从短信跳转到App的需求说起，需求具体来说是点击短信通过自定义scheme协议跳转到App。想想这算一个很常见的引流需求，就排了半天的期开始和IOS的同学一起弄，测试的时候发现IOS可以很自然的通过 A://B?url=http:// 这样的url跳转到App，但是Android的短信应用在点击文本的时候会自动正则匹配到http开始的部分然后用浏览器打开这个http的链接，试了几台手机都是这样，不能读取协议要从短信直接跳转到App基本不可能，所以和产品讨论了下，用另一种比较常见的方式：在浏览器打开的http页面中编写逻辑，先判断是否已经安装App，然后在拼接A://B?url=http:// 这样的链接跳转，Done。</p>
+        <h4 id="Brower2App需求引发的思考"><a href="#Brower2App需求引发的思考" class="headerlink" title="Brower2App需求引发的思考"></a>Brower2App需求引发的思考</h4><p>事情要从接到一个从短信跳转到App的需求说起，需求具体来说是点击短信通过自定义scheme协议跳转到App。想想这算一个很常见的引流需求，就排了半天的期开始和IOS的同学一起弄，测试的时候发现IOS可以很自然的通过 A://B?url=http:// 这样的url跳转到App，但是Android的短信应用在点击文本的时候会自动正则匹配到http开始的部分然后用浏览器打开这个http的链接，试了几台手机都是这样，不能读取协议要从短信直接跳转到App基本不可能，所以和产品讨论了下，用另一种比较常见的方式：在浏览器打开的http页面中编写逻辑，先判断是否已经安装App，然后在拼接A://B?url=http:// 这样的链接跳转，Done。</p>
 <p>完成了这个需求，忽然开始思考为什么能通过浏览器跳转到App，浏览器跳转的方式主要有以下三种：</p>
 <ul>
 <li>iframe</li>
@@ -578,7 +578,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一次-Brower2App-需求带来的思考"><span class="nav-number">1.</span> <span class="nav-text">一次 Brower2App 需求带来的思考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Brower2App需求引发的思考"><span class="nav-number">1.</span> <span class="nav-text">Brower2App需求引发的思考</span></a></li></ol></div>
             
 
           </div>
@@ -743,7 +743,7 @@
         var disqus_config = function () {
           this.page.url = 'http://yoursite.com/2019/03/07/Brower2App引发的思考/';
           this.page.identifier = '2019/03/07/Brower2App引发的思考/';
-          this.page.title = '一次Brower2App需求带来的思考';
+          this.page.title = 'Brower2App需求引发的思考';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
